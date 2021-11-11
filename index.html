@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li><a href="signup.html">Sign Up</a></li>
+    </ul>
+    <script src="script.js"></script>
+    <script type="module">
+        import { initializeApp } from "https://gstatic.com/firebasejs/9.4.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebase/9.4.0/firebase-analytics.js";
+        const firebastConfig = {
+            apiKey: "AIzaSyCUJZr13DfHspnKhEHxyck0y_cIxCpCsr8",
+            authDomain: "trainingxsports.firebase.com",
+            projectId: "trainingxsports",
+            storageBucket: "trainingxsports.appspot.com",
+            messagingSenderId: "440139580740",
+            appId: "1:440139580740:web:de0ca6d5046a513f524311",
+            measurementId: "G-M1ZCLWK63E"
+        };
+
+        const App = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+</body>
+</html>
